@@ -1,0 +1,27 @@
+diploiVersion: v1.0
+type: component
+name: Hono
+description: Official Diploi component for Hono
+
+contexts:
+  - name: app
+    identifier: app
+
+hosts:
+  - name: Hono
+    identifier: app
+    urlFormat: '[label].[default-domain]'
+
+connectionStrings:
+  - name: Internal Address
+    value: http://app.${DIPLOI_NAMESPACE}:3000
+    description: This address is for requests from within the deployment and is inaccessible externally.
+
+images:
+  - identifier: app
+    prebuildImage: ghcr.io/diploi/component-hono:[tag]
+
+logs:
+  - name: Hono Log
+    type: log
+    labelSelector: app=app
