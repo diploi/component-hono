@@ -2,11 +2,27 @@
 
 # Hono Component for Diploi
 
+Start a free demo without registering an account
+https://diploi.com/component/hono
+
 Run [Hono](https://hono.dev/) on Diploi. Uses [Bun](https://bun.sh/) to handle dependencies and to run the application.
 
 Uses the official [oven/bun](https://hub.docker.com/r/oven/bun) Docker image.
 
 ## Operation
+
+### Getting started
+
+1. **Sign up** for a free Diploi account at [https://console.diploi.com/](https://console.diploi.com/)
+2. In the Dashboard, click **Create Project +**
+3. Under **Pick Components**, choose **Hono**
+ You can add other frameworks from this page.
+4. In **Pick Add-ons**, select any databases or extra tools you need.
+5. Choose **Create Repository** so Diploi generates a new GitHub repo for your project.
+6. Click **Launch Stack**
+
+Link to guide 
+https://diploi.com/blog/hosting_hono_apps
 
 ### Development
 
