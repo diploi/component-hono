@@ -2,6 +2,10 @@
 
 # Hono Component for Diploi
 
+[![launch with diploi badge](https://diploi.com/launch.svg)](https://diploi.com/component/hono)
+[![component on diploi badge](https://diploi.com/component.svg)](https://diploi.com/component/hono)
+[![latest tag badge](https://badgen.net/github/tag/diploi/component-hono)](https://diploi.com/component/hono)
+
 Start a free demo without registering an account
 https://diploi.com/component/hono
 
