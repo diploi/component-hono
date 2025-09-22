@@ -39,7 +39,7 @@ spec:
           image: {{ .Values.images.app }}
           imagePullPolicy: Always
           command: ['bun', 'install']
-          workingDir: /app/{{ .Values.identifier }}
+          workingDir: /app{{ .Values.folder }}
           volumeMounts:
             - name: app-mount
               mountPath: /app
@@ -51,7 +51,7 @@ spec:
           ports:
             - containerPort: 3000
           {{- if eq .Values.stage "development" }}
-          workingDir: /app/{{ .Values.identifier }}
+          workingDir: /app{{ .Values.folder }}
           {{- end }}
           env:
             {{- range .Values.env }}
