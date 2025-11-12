@@ -38,5 +38,6 @@ Will build a production ready image. Image runs `bun install` & `bun run build` 
 
 ## Links
 
+- [Adding Hono to a project](https://docs.diploi.com/building/components/hono)
 - [Hono documentation](https://hono.dev/docs/)
 - [Bun documentation](https://bun.sh/docs)
