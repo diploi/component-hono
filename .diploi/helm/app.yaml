@@ -52,6 +52,21 @@ spec:
             - containerPort: 3000
           {{- if eq .Values.stage "development" }}
           workingDir: /app{{ .Values.folder }}
+          {{- with .Values.containerCommands.developmentStart }}
+          command:
+            - /bin/sh
+            - -c
+            - |
+          {{ . | nindent 14 }}
+          {{- end }}
+          {{- else }}
+          {{- with .Values.containerCommands.productionStart }}
+          command:
+            - /bin/sh
+            - -c
+            - |
+          {{ . | nindent 14 }}
+          {{- end }}
           {{- end }}
           env:
             {{- range .Values.env }}
